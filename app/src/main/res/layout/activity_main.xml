@@ -12,14 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Description....."
+        android:hint="@string/description"
         />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnCaptureImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Take Picture"/>
+        android:text="@string/take_picture" />
 
     <ImageView
         android:id="@+id/ivPostImage"
@@ -30,8 +30,8 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Submit" />
+        android:text="@string/submit" />
 
 </LinearLayout>
