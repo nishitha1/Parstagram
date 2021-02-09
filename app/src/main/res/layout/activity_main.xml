@@ -7,13 +7,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"></androidx.appcompat.widget.Toolbar>
+
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/etDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/description"
-        />
+        android:hint="@string/description" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnCaptureImage"
@@ -33,5 +40,12 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:text="@string/submit" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
 
 </LinearLayout>
